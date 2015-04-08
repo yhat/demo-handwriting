@@ -95,7 +95,7 @@ class DigitModel(BaseModel):
 
 digit_model = DigitModel(clf=clf, std_scaler=std_scaler, pca=pca)
 
-yh = Yhat("greg", "abcd1234", "http://starphleet-aa02a554-1981699582.us-west-1.elb.amazonaws.com/deployer/")
+yh = Yhat("YOUR USERNAME", "YOUR APIKEY", "http://cloud.yhathq.com/")
 yh.deploy("digitRecognizer", digit_model) 
 
 
